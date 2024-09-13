@@ -1,0 +1,62 @@
+/* styles.css */
+
+.profile-card img {
+    width: 100%;      /* Ajusta la imagen al ancho del contenedor */
+    height: auto;     /* Mantiene la proporción de la imagen */
+    max-width: 450px; /* Limita el ancho máximo de la imagen */
+    max-height: 320px;/* Limita la altura máxima de la imagen */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url(./imagenes/ellie.png);
+}
+
+.profile-card {
+    position: relative; /* Set relative positioning for the profile card */
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-card img {
+    width: 100%;
+    height: auto;
+}
+
+.profile-card h2 {
+    margin: 0;
+    padding: 16px;
+    font-size: 24px;
+}
+
+.profile-card p {
+    margin: 0;
+    padding: 0 16px 16px;
+    color: #555;
+}
+
+.badge {
+    position: absolute; /* Position the badge absolutely within the profile card */
+    top: 14px;          /* Offset from the top */
+    left: 0;            /* Start from the left edge */
+    right: 0;           /* End at the right edge */
+    margin: 0 auto;    /* Center horizontally */
+    background-color: grey;
+    color: #fff;
+    padding: 7px 14px;
+    border-radius: 12px;
+    font-weight: bold;
+    width: max-content; /* Adjusts width based on content */
+    text-align: center; /* Centers text within the badge */
+    z-index: 10;       /* Ensure badge is above other elements */
+}
